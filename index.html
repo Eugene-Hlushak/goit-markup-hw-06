@@ -409,20 +409,31 @@
       <!-- Модальне вікно -->
 
       <div class="backdrop is-hidden" data-modal>
-        <div class="modal">
+        <form class="modal">
+          <h2 class="modal-title">Залиште свої дані, ми вам передзвонимо</h2>
+
+          <label for="name" class="modal-label">Ім'я</label>
+          <input type="text" name="name" id="name" class="name-input input" />
+
+          <label for="tel-number" class="modal-label">Телефон</label>
+          <input type="tel" name="tel-number" id="tel-number" class="tel-input input" />
+
+          <label for="mail" class="modal-label">Пошта</label>
+          <input type="email" name="email" id="mail" class="mail-input input" />
+
           <button class="btn-close-modal" data-modal-close>
             <svg class="close-icon" width="18" height="18">
               <use href="./images/icons.svg#icon-close"></use>
             </svg>
           </button>
-        </div>
+        </form>
       </div>
     </main>
 
     <!-- Футер -->
     <footer class="footer">
       <div class="container">
-        <div class="addres-container">
+        <div class="address-container">
           <a class="logo link" href="./index.html"
             >Web<span class="footer-logo-studio">Studio</span></a
           >
@@ -481,6 +492,20 @@
             </li>
           </ul>
         </div>
+        <form>
+          <p class="subscribe-title">Підпишіться на розсилку</p>
+          <div class="subscribe-form">
+            <label>
+              <input class="subscribe-email" type="email" name="email" placeholder="E-mail"
+            /></label>
+            <button class="btn-submit" type="submit">
+              Підписатися
+              <svg class="icon-send" width="24" height="24">
+                <use href="./images/icons.svg#icon-send"></use>
+              </svg>
+            </button>
+          </div>
+        </form>
       </div>
     </footer>
 
