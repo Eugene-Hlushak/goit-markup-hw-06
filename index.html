@@ -62,7 +62,7 @@
       <section class="hero section">
         <div class="container">
           <h1 class="hero-title">Ефективні рішення для вашого бізнесу</h1>
-          <button class="btn-order-service" data-modal-open>Замовити послугу</button>
+          <button type="button" class="btn-order-service" data-modal-open>Замовити послугу</button>
         </div>
       </section>
 
@@ -132,12 +132,12 @@
                 <img
                   class="picture"
                   src="./images/work/imga.jpg"
-                  alt="Розробка сайтів"
+                  alt="Розробка десктопних додатків"
                   width="370"
                   height="294"
                 />
 
-                <h2 class="work-label-text">Десктопні додатки</h2>
+                <h3 class="work-label-text">Десктопні додатки</h3>
               </div>
             </li>
             <li class="work-list-item">
@@ -145,11 +145,11 @@
                 <img
                   class="picture"
                   src="./images/work/imgb.jpg"
-                  alt="Створення мобільних версій сайтів"
+                  alt="Створення мобільних додатків"
                   width="370"
                   height="294"
                 />
-                <h2 class="work-label-text">Мобільні додатки</h2>
+                <h3 class="work-label-text">Мобільні додатки</h3>
               </div>
             </li>
             <li class="work-list-item">
@@ -161,7 +161,7 @@
                   width="370"
                   height="294"
                 />
-                <h2 class="work-label-text">Дизайнерські рішення</h2>
+                <h3 class="work-label-text">Дизайнерські рішення</h3>
               </div>
             </li>
           </ul>
@@ -174,6 +174,7 @@
         <div class="container">
           <h2 class="section-title">Наша команда</h2>
           <ul class="team-list list">
+            <!-- працівник 1 -->
             <li class="team-list-item">
               <img
                 class="picture"
@@ -218,6 +219,8 @@
                 </ul>
               </div>
             </li>
+
+            <!-- працівник 2 -->
             <li class="team-list-item">
               <img
                 class="picture"
@@ -262,6 +265,8 @@
                 </ul>
               </div>
             </li>
+
+            <!-- Працівник 3 -->
             <li class="team-list-item">
               <img
                 class="picture"
@@ -306,6 +311,8 @@
                 </ul>
               </div>
             </li>
+
+            <!-- Працівник 4 -->
             <li class="team-list-item">
               <img
                 class="picture"
@@ -405,34 +412,12 @@
           </ul>
         </div>
       </section>
-
-      <!-- Модальне вікно -->
-
-      <div class="backdrop is-hidden" data-modal>
-        <form class="modal">
-          <h2 class="modal-title">Залиште свої дані, ми вам передзвонимо</h2>
-
-          <label for="name" class="modal-label">Ім'я</label>
-          <input type="text" name="name" id="name" class="name-input input" />
-
-          <label for="tel-number" class="modal-label">Телефон</label>
-          <input type="tel" name="tel-number" id="tel-number" class="tel-input input" />
-
-          <label for="mail" class="modal-label">Пошта</label>
-          <input type="email" name="email" id="mail" class="mail-input input" />
-
-          <button class="btn-close-modal" data-modal-close>
-            <svg class="close-icon" width="18" height="18">
-              <use href="./images/icons.svg#icon-close"></use>
-            </svg>
-          </button>
-        </form>
-      </div>
     </main>
 
     <!-- Футер -->
     <footer class="footer">
       <div class="container">
+        <!-- Адреса та контакти -->
         <div class="address-container">
           <a class="logo link" href="./index.html"
             >Web<span class="footer-logo-studio">Studio</span></a
@@ -459,6 +444,8 @@
             </ul>
           </address>
         </div>
+
+        <!-- Соцмережі -->
         <div class="join">
           <h2 class="join-title">Приєднуйтесь</h2>
           <ul class="social-links-list list">
@@ -492,6 +479,8 @@
             </li>
           </ul>
         </div>
+
+        <!-- Підписка -->
         <form>
           <p class="subscribe-title">Підпишіться на розсилку</p>
           <div class="subscribe-form">
@@ -508,6 +497,58 @@
         </form>
       </div>
     </footer>
+
+    <!-- Модальне вікно -->
+
+    <div class="backdrop is-hidden" data-modal>
+      <form class="modal">
+        <h2 class="modal-title">Залиште свої дані, ми вам передзвонимо</h2>
+        <div class="form-input">
+          <label for="name" class="modal-label">Ім'я</label>
+          <input type="text" name="name" id="name" class="name-input input" />
+          <svg class="modal-icon" width="18" height="18">
+            <use href="./images/icons.svg#icon-person"></use>
+          </svg>
+        </div>
+        <div class="form-input">
+          <label for="tel-number" class="modal-label">Телефон</label>
+          <input type="tel" name="tel-number" id="tel-number" class="tel-input input" />
+          <svg class="modal-icon" width="18" height="18">
+            <use href="./images/icons.svg#icon-phone"></use>
+          </svg>
+        </div>
+
+        <div class="form-input">
+          <label for="mail" class="modal-label">Пошта</label>
+          <input type="email" name="mail" id="mail" class="mail-input input" />
+          <svg class="modal-icon" width="18" height="18">
+            <use href="./images/icons.svg#icon-email"></use>
+          </svg>
+        </div>
+
+        <div class="form-input">
+          <label class="modal-label">Коментар</label>
+          <textarea name="comment" placeholder="Введіть текст" class="comment-input"></textarea>
+        </div>
+
+        <div class="accept">
+          <label>
+            <input type="checkbox" name="accept" class="accept-box" />
+          </label>
+          <p class="accept-text">
+            Погоджуюся з розсилкою та приймаю <a class="accept-link" href="">Умови договору</a>
+          </p>
+        </div>
+
+        <button type="submit" class="btn-submit-data">Відправити</button>
+
+        <button class="btn-close-modal" data-modal-close>
+          <svg class="close-icon" width="18" height="18">
+            <use href="./images/icons.svg#icon-close"></use>
+          </svg>
+        </button>
+      </form>
+    </div>
 
     <!-- "Замовити послугу" -->
     <script src="./js/modal.js"></script>
