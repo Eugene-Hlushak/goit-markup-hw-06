@@ -481,13 +481,13 @@
         </div>
 
         <!-- Підписка -->
-        <form>
+        <form class="subscribe-form">
           <p class="subscribe-title">Підпишіться на розсилку</p>
-          <div class="subscribe-form">
+          <div class="subscribe-container">
             <label>
-              <input class="subscribe-email" type="email" name="email" placeholder="E-mail"
+              <input class="subscribe-email" type="email" name="user-email" placeholder="E-mail"
             /></label>
-            <button class="btn-submit" type="submit">
+            <button class="btn-submit-subscribe" type="submit">
               Підписатися
               <svg class="icon-send" width="24" height="24">
                 <use href="./images/icons.svg#icon-send"></use>
@@ -519,8 +519,8 @@
               name="client-name"
               id="name"
               class="name-input input"
-              pattern="[a-zA-Zа-яА-ЯіІЇєЄ']+"
-              title="Вводіть лише букви"
+              pattern="[a-zA-Zа-яА-ЯіІЇєЄ' ]+"
+              title="Іван Іванович"
               required
             />
             <svg class="input-icon" width="18" height="18">
@@ -582,7 +582,7 @@
           </p>
         </label>
 
-        <button type="submit" class="btn-submit-data">Відправити</button>
+        <button type="submit" class="btn-submit-client-data">Відправити</button>
       </form>
     </div>
 

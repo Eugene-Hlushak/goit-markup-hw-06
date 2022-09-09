@@ -519,10 +519,6 @@ p {
   color: var(--accent-color);
 }
 
-.join {
-  margin-right: 93px;
-}
-
 .join-title {
   font-size: 14px;
   margin-bottom: 20px;
@@ -545,7 +541,13 @@ p {
   fill: #ffffff;
 }
 
+/* ===== Subscribe ===== */
+
 .subscribe-form {
+  margin-left: auto;
+}
+
+.subscribe-container {
   display: flex;
 }
 
@@ -578,7 +580,7 @@ p {
   color: rgba(255, 255, 255, 0.6);
 }
 
-.btn-submit {
+.btn-submit-subscribe {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -604,6 +606,7 @@ p {
   margin-left: 10px;
   fill: currentColor;
 }
+
 /* ===== PORTFOLIO ===== */
 
 .filters-list {
@@ -704,7 +707,7 @@ p {
   color: #ffffff;
 }
 
-/* overlay */
+/* overlay end*/
 
 .examples .card-description {
   padding: 20px 24px;
@@ -918,11 +921,13 @@ p {
   color: var(--accent-color);
 }
 
-.btn-submit-data {
+.btn-submit-client-data {
+  display: block;
   width: 200px;
   height: 50px;
   border-radius: 4px;
-  margin-left: 124px;
+  margin-left: auto;
+  margin-right: auto;
   border: none;
 
   color: var(--secondary-text-color);
